@@ -20,7 +20,7 @@ NLP Project/
 │   └── sample_inputs.json
 └── visualization/         # Scripts to generate training heatmaps
     └── save_attention_heatmaps.py
-
+```
 ## ⚙️ Setup & Training
 
 Because large dataset files and model weights are not stored in this repository, you must generate the data and train the models locally before running the demo.
