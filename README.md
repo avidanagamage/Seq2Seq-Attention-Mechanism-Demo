@@ -31,33 +31,33 @@ Run the generation script to create the synthetic string reversal dataset and th
 cd data
 python generate_dataset.py
 cd ..
-
+```
 ### 2. Train Baseline Model
 Trains the standard GRU Seq2Seq model (without attention). The model weights will be saved to (`models/baseline/baseline_weights.pth`)
 ```bash
 cd models/baseline
 python train_baseline.py
 cd ../..
-
+```
 ### 3. Train Attention Model
 Trains the Bidirectional GRU model with Bahdanau Attention. This script saves the weights to (`models/attention/attention_weights.pth`) and logs attention matrices for visualization.
 ```bash
 cd models/baseline
 python train_baseline.py
 cd ../..
-
+```
 ### 4. Generate Training Visualizations (Optional)
 Creates static heatmaps showing how the attention alignment evolved during training (from random noise to a diagonal).
 ```bash
 python visualization/save_attention_heatmaps.py
-
+```
 ## 🖥️ Running the Demo App
 
 Once the models are trained, launch the interactive web dashboard to test custom inputs and visualize the attention weights live.
 
 ```bash
 streamlit run demo_app/app.py
-
+```
 ## 📊 Model Details
 
 ### 🔹 Baseline Model
